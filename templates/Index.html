@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Palindrome</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <button id="button" onclick="toggleTheme()">Dark</button>
+  <h1 id="myH1">𝕻𝖆𝖑𝖎𝖓𝖉𝖗𝖔𝖒𝖊 𝕮𝖍𝖊𝖈𝖐𝖊𝖗</h1>
+  <div id="div">
+    <form method="POST">
+        <input type="text" name="text" placeholder="Enter text..." required id="input">
+        <button type="submit">Check</button>
+    </form>
+    
+    {% if result is not none %}
+        <p>{{ "✅ It's a palindrome!" if result else "❌ Not a palindrome." }}</p>
+    {% endif %}
+    
+    <p id="display"></p>
+  </div>
+  <p id="text">&copy; Baanbil Godfred</p>
+  <script src="script.js"></script>
+</body>
+</html>
