@@ -1,0 +1,56 @@
+body{
+  background: khaki;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+#div{
+  width: 200px;
+  height: 200px;
+  border: 32px solid;
+  border-radius: 50%;
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+ 
+  background: url("animal3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#input{
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+  background: transparent;
+  color: white;
+  width: 90px;
+}
+#display{
+  background: white;
+}
+button{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: transparent;
+  color: white;
+  font-style: solid;
+  backdrop-filter: blur(10px);
+  outline: none;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    animation: fadeIn 1s ease-in-out;
+}
